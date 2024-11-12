@@ -45,3 +45,13 @@ def calculate_points(atlete_scores: dict) -> str:
 
 
 calculate_points(atlete_scores=atlete_notes)
+
+# join two lists to show a complete names of each person
+
+names = ["joão", "MaRia", "JOSÉ"]
+last_names = ["SILVA", "souza", "Tavares"]
+
+full_name = map(lambda name, last_name: f'{name.title()} {last_name.title()}', names, last_names)
+
+for n in full_name:
+    print(f'Full name: {n}')
