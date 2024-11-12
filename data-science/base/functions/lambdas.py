@@ -19,9 +19,10 @@ list_multiple_3 = get_multiple_3(list_multiple_values=list_values)
 
 print(list_multiple_3)
 
-# create a list of sqrt of numbers list. Use map and lambda to do this
+# get a list of numbers and  use map and lambda to get the pow of each value on the list
+
+values_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sqrt_list = list(map(lambda value: value ** 2, values_list))
+print(sqrt_list)
 
 
-# list_multiple_3 = list(map(lambda value_list: value_list * 3 == 0, list_values))
-
-# print(list_multiple_3)
