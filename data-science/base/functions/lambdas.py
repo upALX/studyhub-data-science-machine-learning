@@ -25,4 +25,23 @@ values_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 sqrt_list = list(map(lambda value: value ** 2, values_list))
 print(sqrt_list)
 
+#calculate the points of each atlete by notes
+#calculate by the rule: eliminate the max and min note and calculate the average
 
+atlete_notes = {
+    "Player1": [7, 5, 6, 9, 8],
+    "Player2": [8, 9, 6, 8, 7],
+    "Player3": [9, 7, 7, 6, 8]
+}
+
+def calculate_points(atlete_scores: dict) -> str:
+    for name, scores in atlete_scores.items():
+        scores.remove(min(scores)) 
+        scores.remove(max(scores))
+
+        final_score = sum(scores) / len(scores)
+
+        print(f'final score from {name} is {round(final_score, 2)}')
+
+
+calculate_points(atlete_scores=atlete_notes)
