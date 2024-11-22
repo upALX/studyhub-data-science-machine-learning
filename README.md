@@ -14,7 +14,7 @@ All of all
 
 **1 - Clone this repo**
 ```
-git clone git@github.com:upALX/studyhub-data-science-machine-learning.git
+git clone git@github.com:upALX/studyhub-data-science-machine-learning.git studhub-mls
 ```
 
 **Know the CAOS of knowledge**
